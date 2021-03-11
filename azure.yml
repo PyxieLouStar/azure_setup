@@ -1,0 +1,23 @@
+name: azure
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - astropy
+  - astropy-healpix
+  - astroquery
+  - cython
+  - ipython
+  - jupyter
+  - matplotlib
+  - mpi4py
+  - numpy
+  - pandas
+  - pyyaml
+  - scipy
+  - pip
+  - pip:
+      - azure-cli
+      - -e ./repos/pyuvdata
+      - -e ./repos/SSINS
+
